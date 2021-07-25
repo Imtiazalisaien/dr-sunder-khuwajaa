@@ -1,0 +1,11 @@
+image = X_train[1203,:].reshape((128,128)) 
+plt.imshow(image) 
+plt.show()  
+#Initialising the input shape input_shape=img_data[0].shape # Design the CNN Sequential model cnn_model = Sequential([     Convolution2D(32,3,3,border_mode ='same',activation ='relu',input_shape = input_shape),     Convolution2D(32,3,3,activation='relu'),     MaxPooling2D(pool_size=(2,2)) ,     Dropout(0.5),     Flatten(),      Dense(128,activation='relu'),     Dropout(0.5),     Dense(num_classes,activation = 'softmax') ])  
+image = X_train[1203,:].reshape((128,128)) 
+plt.imshow(image) 
+plt.show() 
+ 
+image = X_train[1203,:].reshape((128,128)) 
+plt.imshow(image) 
+plt.show(
